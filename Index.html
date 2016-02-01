@@ -1,0 +1,642 @@
+<!DOCTYPE HTML>
+<!--Matyas Fenyves-->
+<html>
+	<head>
+		<title>Hot and Cold</title>
+		<script>
+			var GOAL = parseInt (Math.random() * 101) ;
+			tries = 5 ;
+			
+			function guess01()
+				{
+					var try1 = parseInt(prompt("Guess 1")) ;
+					if (try1 == GOAL)
+						{
+							guess = document.getElementById("guess1") ;
+							guess.innerHTML = try1 ;
+							guess = document.getElementById("temp1") ;
+							guess.innerHTML = "Correct!" ;
+							tries = 1 ;
+						}
+						else
+							{
+								if (try1 <= (GOAL+5) && try1 >= (GOAL-5))
+									{
+										guess = document.getElementById("guess1") ;
+										guess.innerHTML = try1 ;
+										guess = document.getElementById("temp1") ;
+										guess.innerHTML = "Very Hot!" ;
+									}
+									else
+									{
+										if (try1 <= (GOAL+8) && try1 >= (GOAL-8))
+											{
+												guess = document.getElementById("guess1") ;
+												guess.innerHTML = try1 ;
+												guess = document.getElementById("temp1") ;
+												guess.innerHTML = "Hot!" ;
+											}
+											else
+											{
+												if (try1 <= (GOAL+15) && try1 >= (GOAL-15))
+													{
+														guess = document.getElementById("guess1") ;
+														guess.innerHTML = try1 ;
+														guess = document.getElementById("temp1") ;
+														guess.innerHTML = "Very Warm!" ;
+													}
+													else
+													{
+														if (try1 <= (GOAL+20) && try1 >= (GOAL-20))
+															{
+																guess = document.getElementById("guess1") ;
+																guess.innerHTML = try1 ;
+																guess = document.getElementById("temp1") ;
+																guess.innerHTML = "Warm!" ;
+															}
+															else
+															{
+																if (try1 <= (GOAL+30) && try1 >= (GOAL-30))
+																	{
+																		guess = document.getElementById("guess1") ;
+																		guess.innerHTML = try1 ;
+																		guess = document.getElementById("temp1") ;
+																		guess.innerHTML = "Cool!" ;
+																	}
+																	else
+																	{
+																		if (try1 <= (GOAL+40) && try1 >= (GOAL-40))
+																			{
+																				guess = document.getElementById("guess1") ;
+																				guess.innerHTML = try1 ;
+																				guess = document.getElementById("temp1") ;
+																				guess.innerHTML = "Very Cool!" ;
+																			}
+																			else
+																			{
+																				if (try1 <= (GOAL+55) && try1 >= (GOAL-55))
+																					{
+																						guess = document.getElementById("guess1") ;
+																						guess.innerHTML = try1 ;
+																						guess = document.getElementById("temp1") ;
+																						guess.innerHTML = "Cold!" ;
+																					}
+																					else
+																					{
+																						if (try1 > (GOAL+55) || try1 <(GOAL-55))
+																							{
+																								guess = document.getElementById("guess1") ;
+																								guess.innerHTML = try1 ;
+																								guess = document.getElementById("temp1") ;
+																								guess.innerHTML = "Very Cold!" ;
+																							}
+																							else
+																							{
+																								guess = document.getElementById("guess1") ;
+																								guess.innerHTML = try1 ;
+																								guess = document.getElementById("temp1") ;
+																								guess.innerHTML = "That is not a number!" ;
+																							}
+																					}
+																			}
+																	}
+															}
+													}
+											}
+									}
+							}
+				}
+				
+				
+				function guess02()
+				{
+					var try2 = parseInt(prompt("Guess 2")) ;
+					if (try2 == GOAL)
+						{
+							guess = document.getElementById("guess2") ;
+							guess.innerHTML = try2 ;
+							guess = document.getElementById("temp2") ;
+							guess.innerHTML = "Correct!" ;
+							tries = 1 ;
+						}
+						else
+							{
+								if (try2 <= (GOAL+5) && try2 >= (GOAL-5))
+									{
+										guess = document.getElementById("guess2") ;
+										guess.innerHTML = try2 ;
+										guess = document.getElementById("temp2") ;
+										guess.innerHTML = "Very Hot!" ;
+									}
+									else
+									{
+										if (try2 <= (GOAL+8) && try2 >= (GOAL-8))
+											{
+												guess = document.getElementById("guess2") ;
+												guess.innerHTML = try2 ;
+												guess = document.getElementById("temp2") ;
+												guess.innerHTML = "Hot!" ;
+											}
+											else
+											{
+												if (try2 <= (GOAL+15) && try2 >= (GOAL-15))
+													{
+														guess = document.getElementById("guess2") ;
+														guess.innerHTML = try2 ;
+														guess = document.getElementById("temp2") ;
+														guess.innerHTML = "Very Warm!" ;
+													}
+													else
+													{
+														if (try2 <= (GOAL+20) && try2 >= (GOAL-20))
+															{
+																guess = document.getElementById("guess2") ;
+																guess.innerHTML = try2 ;
+																guess = document.getElementById("temp2") ;
+																guess.innerHTML = "Warm!" ;
+															}
+															else
+															{
+																if (try2 <= (GOAL+30) && try2 >= (GOAL-30))
+																	{
+																		guess = document.getElementById("guess2") ;
+																		guess.innerHTML = try2 ;
+																		guess = document.getElementById("temp2") ;
+																		guess.innerHTML = "Cool!" ;
+																	}
+																	else
+																	{
+																		if (try2 <= (GOAL+40) && try2 >= (GOAL-40))
+																			{
+																				guess = document.getElementById("guess2") ;
+																				guess.innerHTML = try2 ;
+																				guess = document.getElementById("temp2") ;
+																				guess.innerHTML = "Very Cool!" ;
+																			}
+																			else
+																			{
+																				if (try2 <= (GOAL+55) && try2 >= (GOAL-55))
+																					{
+																						guess = document.getElementById("guess2") ;
+																						guess.innerHTML = try2 ;
+																						guess = document.getElementById("temp2") ;
+																						guess.innerHTML = "Cold!" ;
+																					}
+																					else
+																					{
+																						if (try2 > (GOAL+55) || try2 <(GOAL-55))
+																							{
+																								guess = document.getElementById("guess2") ;
+																								guess.innerHTML = try2 ;
+																								guess = document.getElementById("temp2") ;
+																								guess.innerHTML = "Very Cold!" ;
+																							}
+																							else
+																							{
+																								guess = document.getElementById("guess2") ;
+																								guess.innerHTML = try2 ;
+																								guess = document.getElementById("temp2") ;
+																								guess.innerHTML = "That is not a number!" ;
+																							}
+																					}
+																			}
+																	}
+															}
+													}
+											}
+									}
+							}
+				}
+				
+				function guess03()
+				{
+					var try3 = parseInt(prompt("Guess 3")) ;
+					if (try3 == GOAL)
+						{
+							guess = document.getElementById("guess3") ;
+							guess.innerHTML = try3 ;
+							guess = document.getElementById("temp3") ;
+							guess.innerHTML = "Correct!" ;
+							tries = 1 ;
+						}
+						else
+							{
+								if (try3 <= (GOAL+5) && try3 >= (GOAL-5))
+									{
+										guess = document.getElementById("guess3") ;
+										guess.innerHTML = try3 ;
+										guess = document.getElementById("temp3") ;
+										guess.innerHTML = "Very Hot!" ;
+									}
+									else
+									{
+										if (try3 <= (GOAL+8) && try3 >= (GOAL-8))
+											{
+												guess = document.getElementById("guess3") ;
+												guess.innerHTML = try3 ;
+												guess = document.getElementById("temp3") ;
+												guess.innerHTML = "Hot!" ;
+											}
+											else
+											{
+												if (try3 <= (GOAL+15) && try3 >= (GOAL-15))
+													{
+														guess = document.getElementById("guess3") ;
+														guess.innerHTML = try3 ;
+														guess = document.getElementById("temp3") ;
+														guess.innerHTML = "Very Warm!" ;
+													}
+													else
+													{
+														if (try3 <= (GOAL+20) && try3 >= (GOAL-20))
+															{
+																guess = document.getElementById("guess3") ;
+																guess.innerHTML = try3 ;
+																guess = document.getElementById("temp3") ;
+																guess.innerHTML = "Warm!" ;
+															}
+															else
+															{
+																if (try3 <= (GOAL+30) && try3 >= (GOAL-30))
+																	{
+																		guess = document.getElementById("guess3") ;
+																		guess.innerHTML = try3 ;
+																		guess = document.getElementById("temp3") ;
+																		guess.innerHTML = "Cool!" ;
+																	}
+																	else
+																	{
+																		if (try3 <= (GOAL+40) && try3 >= (GOAL-40))
+																			{
+																				guess = document.getElementById("guess3") ;
+																				guess.innerHTML = try3 ;
+																				guess = document.getElementById("temp3") ;
+																				guess.innerHTML = "Very Cool!" ;
+																			}
+																			else
+																			{
+																				if (try3 <= (GOAL+55) && try3 >= (GOAL-55))
+																					{
+																						guess = document.getElementById("guess3") ;
+																						guess.innerHTML = try3 ;
+																						guess = document.getElementById("temp3") ;
+																						guess.innerHTML = "Cold!" ;
+																					}
+																					else
+																					{
+																						if (try3 > (GOAL+55) || try3 <(GOAL-55))
+																							{
+																								guess = document.getElementById("guess3") ;
+																								guess.innerHTML = try3 ;
+																								guess = document.getElementById("temp3") ;
+																								guess.innerHTML = "Very Cold!" ;
+																							}
+																							else
+																							{
+																								guess = document.getElementById("guess3") ;
+																								guess.innerHTML = try3 ;
+																								guess = document.getElementById("temp3") ;
+																								guess.innerHTML = "That is not a number!" ;
+																							}
+																					}
+																			}
+																	}
+															}
+													}
+											}
+									}
+							}
+				}
+				
+				function guess04()
+				{
+					var try4 = parseInt(prompt("Guess 4")) ;
+					if (try4 == GOAL)
+						{
+							guess = document.getElementById("guess4") ;
+							guess.innerHTML = try4 ;
+							guess = document.getElementById("temp4") ;
+							guess.innerHTML = "Correct!" ;
+							tries = 1 ;
+						}
+						else
+							{
+								if (try4 <= (GOAL+5) && try4 >= (GOAL-5))
+									{
+										guess = document.getElementById("guess4") ;
+										guess.innerHTML = try4 ;
+										guess = document.getElementById("temp4") ;
+										guess.innerHTML = "Very Hot!" ;
+									}
+									else
+									{
+										if (try4 <= (GOAL+8) && try4 >= (GOAL-8))
+											{
+												guess = document.getElementById("guess4") ;
+												guess.innerHTML = try4 ;
+												guess = document.getElementById("temp4") ;
+												guess.innerHTML = "Hot!" ;
+											}
+											else
+											{
+												if (try4 <= (GOAL+15) && try4 >= (GOAL-15))
+													{
+														guess = document.getElementById("guess4") ;
+														guess.innerHTML = try4 ;
+														guess = document.getElementById("temp4") ;
+														guess.innerHTML = "Very Warm!" ;
+													}
+													else
+													{
+														if (try4 <= (GOAL+20) && try4 >= (GOAL-20))
+															{
+																guess = document.getElementById("guess4") ;
+																guess.innerHTML = try4 ;
+																guess = document.getElementById("temp4") ;
+																guess.innerHTML = "Warm!" ;
+															}
+															else
+															{
+																if (try4 <= (GOAL+30) && try4 >= (GOAL-30))
+																	{
+																		guess = document.getElementById("guess4") ;
+																		guess.innerHTML = try4 ;
+																		guess = document.getElementById("temp4") ;
+																		guess.innerHTML = "Cool!" ;
+																	}
+																	else
+																	{
+																		if (try4 <= (GOAL+40) && try4 >= (GOAL-40))
+																			{
+																				guess = document.getElementById("guess4") ;
+																				guess.innerHTML = try4 ;
+																				guess = document.getElementById("temp4") ;
+																				guess.innerHTML = "Very Cool!" ;
+																			}
+																			else
+																			{
+																				if (try4 <= (GOAL+55) && try4 >= (GOAL-55))
+																					{
+																						guess = document.getElementById("guess4") ;
+																						guess.innerHTML = try4 ;
+																						guess = document.getElementById("temp4") ;
+																						guess.innerHTML = "Cold!" ;
+																					}
+																					else
+																					{
+																						if (try4 > (GOAL+55) || try4 <(GOAL-55))
+																							{
+																								guess = document.getElementById("guess4") ;
+																								guess.innerHTML = try4 ;
+																								guess = document.getElementById("temp4") ;
+																								guess.innerHTML = "Very Cold!" ;
+																							}
+																							else
+																							{
+																								guess = document.getElementById("guess4") ;
+																								guess.innerHTML = try4 ;
+																								guess = document.getElementById("temp4") ;
+																								guess.innerHTML = "That is not a number!" ;
+																							}
+																					}
+																			}
+																	}
+															}
+													}
+											}
+									}
+							}
+				}
+				
+				function guess05()
+				{
+					var try5 = parseInt(prompt("Guess 5")) ;
+					if (try5 == GOAL)
+						{
+							guess = document.getElementById("guess5") ;
+							guess.innerHTML = try5 ;
+							guess = document.getElementById("temp5") ;
+							guess.innerHTML = "Correct!" ;
+							tries = 1 ;
+						}
+						else
+							{
+								if (try5 <= (GOAL+5) && try5 >= (GOAL-5))
+									{
+										guess = document.getElementById("guess5") ;
+										guess.innerHTML = try5 ;
+										guess = document.getElementById("temp5") ;
+										guess.innerHTML = "Very Hot!" ;
+									}
+									else
+									{
+										if (try5 <= (GOAL+8) && try5 >= (GOAL-8))
+											{
+												guess = document.getElementById("guess5") ;
+												guess.innerHTML = try5 ;
+												guess = document.getElementById("temp5") ;
+												guess.innerHTML = "Hot!" ;
+											}
+											else
+											{
+												if (try5 <= (GOAL+15) && try5 >= (GOAL-15))
+													{
+														guess = document.getElementById("guess5") ;
+														guess.innerHTML = try5 ;
+														guess = document.getElementById("temp5") ;
+														guess.innerHTML = "Very Warm!" ;
+													}
+													else
+													{
+														if (try5 <= (GOAL+20) && try5 >= (GOAL-20))
+															{
+																guess = document.getElementById("guess5") ;
+																guess.innerHTML = try5 ;
+																guess = document.getElementById("temp5") ;
+																guess.innerHTML = "Warm!" ;
+															}
+															else
+															{
+																if (try5 <= (GOAL+30) && try5 >= (GOAL-30))
+																	{
+																		guess = document.getElementById("guess5") ;
+																		guess.innerHTML = try5 ;
+																		guess = document.getElementById("temp5") ;
+																		guess.innerHTML = "Cool!" ;
+																	}
+																	else
+																	{
+																		if (try5 <= (GOAL+40) && try5 >= (GOAL-40))
+																			{
+																				guess = document.getElementById("guess5") ;
+																				guess.innerHTML = try5 ;
+																				guess = document.getElementById("temp5") ;
+																				guess.innerHTML = "Very Cool!" ;
+																			}
+																			else
+																			{
+																				if (try5 <= (GOAL+55) && try5 >= (GOAL-55))
+																					{
+																						guess = document.getElementById("guess5") ;
+																						guess.innerHTML = try5 ;
+																						guess = document.getElementById("temp5") ;
+																						guess.innerHTML = "Cold!" ;
+																					}
+																					else
+																					{
+																						if (try5 > (GOAL+55) || try5 <(GOAL-55))
+																							{
+																								guess = document.getElementById("guess5") ;
+																								guess.innerHTML = try5 ;
+																								guess = document.getElementById("temp5") ;
+																								guess.innerHTML = "Very Cold!" ;
+																							}
+																							else
+																							{
+																								guess = document.getElementById("guess5") ;
+																								guess.innerHTML = try5 ;
+																								guess = document.getElementById("temp5") ;
+																								guess.innerHTML = "That is not a number!" ;
+																							}
+																					}
+																			}
+																	}
+															}
+													}
+											}
+									}
+							}
+				}
+				
+				function clickThis()
+				{
+					if (tries == 5)
+					{
+						guess01() ;
+					}
+					else
+					{
+						if (tries == 4)
+						{
+							guess02() ;
+						}
+						else
+						{
+							if (tries == 3)
+							{
+								guess03() ;
+							}
+							else
+							{
+								if (tries == 2)
+								{
+									guess04() ;
+								}
+								else
+								{
+									if (tries == 1)
+									{
+										guess05() ;
+									}
+									
+								}
+							}
+						}
+					}
+				}
+				
+				function finish()
+				{
+					if (tries == 0)
+					{
+						thing = document.getElementById("myButton") ;
+						thing.innerHTML = "Reset!" ;
+					}
+				}
+				function reset()
+				{
+					if (tries == -1)
+					{
+						thing = document.getElementById("myButton") ;
+						thing.innerHTML = "Guess the Number!" ;
+						GOAL = parseInt (Math.random() * 101) ;
+						tries = 5 ;
+						guess = document.getElementById("guess1") ;
+						guess.innerHTML = "" ;
+						guess = document.getElementById("temp1") ;
+						guess.innerHTML = "" ;
+						guess = document.getElementById("guess2") ;
+						guess.innerHTML = "" ;
+						guess = document.getElementById("temp2") ;
+						guess.innerHTML = "" ;
+						guess = document.getElementById("guess3") ;
+						guess.innerHTML = "" ;
+						guess = document.getElementById("temp3") ;
+						guess.innerHTML = "" ;
+						guess = document.getElementById("guess4") ;
+						guess.innerHTML = "" ;
+						guess = document.getElementById("temp4") ;
+						guess.innerHTML = "" ;
+						guess = document.getElementById("guess5") ;
+						guess.innerHTML = "" ;
+						guess = document.getElementById("temp5") ;
+						guess.innerHTML = "" ;
+					}
+				}
+				
+		</script>
+		<style>
+			div,span 
+				{
+					font-size:25pt ;
+					text-align:left ;
+					text-align:justify ;
+				}
+			body
+				{
+					margin-left:15% ;
+					margin-right:15% ;
+					margin-top:5% ;
+					color:#FFFF00 ;
+					font-weight:bold ;
+				}
+			img
+				{
+					z-index:-2 ;
+					position:fixed ;
+					top:0px ;
+					left:0px ;
+					height:100% ;
+					width:100% ;
+				}
+			div
+				{
+					color:#FF3300 ;
+				}
+			span>img
+				{
+					opacity:.65;
+				}
+		</style>
+	</head>
+	<body>
+		<img src = "hotcold.jpg" />
+		<span>
+			<img src = "numbers.png" />
+		</span>
+		<span>
+			This is a game of Hot and Cold. You get five guesses to guess the number. The closer your guess to the number, the warmer the temperature. Good Luck!
+		</span>
+		<br /><br />
+		<button id = "myButton" onclick = "clickThis(); tries = tries - 1 ; finish() ; reset() ; earlyFinish() ;"></button>
+		<div id = "guess1"></div><div id = "temp1"></div>
+		<div id = "guess2"></div><div id = "temp2"></div>
+		<div id = "guess3"></div><div id = "temp3"></div>
+		<div id = "guess4"></div><div id = "temp4"></div>
+		<div id = "guess5"></div><div id = "temp5"></div>
+	</body>
+	<script>
+		thing = document.getElementById("myButton") ;
+		thing.innerHTML = "Guess the Number!" ;
+	</script>
+</html>
